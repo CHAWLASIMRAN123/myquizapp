@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="quizapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaM-QX-ebc">
+                                <rect key="frame" x="20" y="44" width="40" height="44.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="🦋">
+                                        <attributes>
+                                            <font key="NSFont" size="40" name=".AppleColorEmojiUI"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHY-ZJ-hlN">
+                                <rect key="frame" x="354" y="44" width="40" height="44.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="🐼">
+                                        <attributes>
+                                            <font key="NSFont" size="40" name=".AppleColorEmojiUI"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="40"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atD-VB-ApQ">
+                                <rect key="frame" x="20" y="817.5" width="40" height="44.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="🐹">
+                                        <attributes>
+                                            <font key="NSFont" size="40" name=".AppleColorEmojiUI"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="40"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3d-Ga-kox">
+                                <rect key="frame" x="354" y="817.5" width="40" height="44.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="🐥">
+                                        <attributes>
+                                            <font key="NSFont" size="40" name=".AppleColorEmojiUI"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="40"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="qty-Il-H9K">
+                                <rect key="frame" x="80" y="406" width="254" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which animal are you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eys-bF-qRo">
+                                        <rect key="frame" x="0.0" y="0.0" width="254" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1x-Dp-nQb">
+                                        <rect key="frame" x="76" y="54" width="102.5" height="30"/>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.96238771410000001" blue="0.73689020230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gaM-QX-ebc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="00Z-5I-AOw"/>
+                            <constraint firstItem="gaM-QX-ebc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7XJ-Hk-tLD"/>
+                            <constraint firstItem="atD-VB-ApQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9de-xO-u7V"/>
+                            <constraint firstItem="f3d-Ga-kox" firstAttribute="top" secondItem="HHY-ZJ-hlN" secondAttribute="bottom" constant="320" id="AvH-Cn-nwq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HHY-ZJ-hlN" secondAttribute="trailing" constant="20" id="BuY-ho-rSB"/>
+                            <constraint firstItem="gaM-QX-ebc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CdV-5T-TB7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f3d-Ga-kox" secondAttribute="trailing" constant="20" id="IoF-wY-dm8"/>
+                            <constraint firstItem="gaM-QX-ebc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LZM-MT-hDv"/>
+                            <constraint firstItem="f3d-Ga-kox" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="St9-7w-vX4"/>
+                            <constraint firstItem="atD-VB-ApQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="XyB-wp-E6Q"/>
+                            <constraint firstItem="f3d-Ga-kox" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Zfn-Pv-ZLZ"/>
+                            <constraint firstItem="f3d-Ga-kox" firstAttribute="leading" secondItem="atD-VB-ApQ" secondAttribute="trailing" constant="284" id="Zz2-Z5-s0J"/>
+                            <constraint firstItem="atD-VB-ApQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eMr-S9-9Mu"/>
+                            <constraint firstItem="atD-VB-ApQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fcV-cJ-BfG"/>
+                            <constraint firstItem="f3d-Ga-kox" firstAttribute="top" secondItem="HHY-ZJ-hlN" secondAttribute="bottom" constant="329.5" id="gZG-I7-b7b"/>
+                            <constraint firstItem="atD-VB-ApQ" firstAttribute="top" secondItem="gaM-QX-ebc" secondAttribute="bottom" constant="320" id="mKD-E3-2gr"/>
+                            <constraint firstItem="HHY-ZJ-hlN" firstAttribute="leading" secondItem="gaM-QX-ebc" secondAttribute="trailing" constant="284" id="nMS-CO-zhE"/>
+                            <constraint firstItem="HHY-ZJ-hlN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="p03-7Q-KiL"/>
+                            <constraint firstItem="f3d-Ga-kox" firstAttribute="leading" secondItem="atD-VB-ApQ" secondAttribute="trailing" constant="284" id="tZ7-Kg-4xp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f3d-Ga-kox" secondAttribute="trailing" constant="20" id="wIc-gD-ls0"/>
+                            <constraint firstItem="atD-VB-ApQ" firstAttribute="top" secondItem="gaM-QX-ebc" secondAttribute="bottom" constant="329.5" id="xY2-oO-9tm"/>
+                            <constraint firstItem="qty-Il-H9K" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xpO-ml-63W"/>
+                            <constraint firstItem="HHY-ZJ-hlN" firstAttribute="leading" secondItem="gaM-QX-ebc" secondAttribute="trailing" constant="284" id="zdS-lS-gak"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
