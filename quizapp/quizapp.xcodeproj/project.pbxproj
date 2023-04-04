@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4103A40A29D478990028EBA6 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103A40929D478990028EBA6 /* QuestionViewController.swift */; };
+		4103A40C29D478C10028EBA6 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103A40B29D478C10028EBA6 /* ResultsViewController.swift */; };
+		417227E629DC54DA008FA4C3 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417227E529DC54DA008FA4C3 /* Question.swift */; };
 		41B290C529D316D000443394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B290C429D316D000443394 /* AppDelegate.swift */; };
 		41B290C729D316D000443394 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B290C629D316D000443394 /* SceneDelegate.swift */; };
 		41B290C929D316D000443394 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B290C829D316D000443394 /* ViewController.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4103A40929D478990028EBA6 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		4103A40B29D478C10028EBA6 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		417227E529DC54DA008FA4C3 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		41B290C129D316D000443394 /* quizapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quizapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B290C429D316D000443394 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41B290C629D316D000443394 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,10 +108,13 @@
 				41B290C429D316D000443394 /* AppDelegate.swift */,
 				41B290C629D316D000443394 /* SceneDelegate.swift */,
 				41B290C829D316D000443394 /* ViewController.swift */,
+				4103A40929D478990028EBA6 /* QuestionViewController.swift */,
+				4103A40B29D478C10028EBA6 /* ResultsViewController.swift */,
 				41B290CA29D316D000443394 /* Main.storyboard */,
 				41B290CD29D316D600443394 /* Assets.xcassets */,
 				41B290CF29D316D600443394 /* LaunchScreen.storyboard */,
 				41B290D229D316D600443394 /* Info.plist */,
+				417227E529DC54DA008FA4C3 /* Question.swift */,
 			);
 			path = quizapp;
 			sourceTree = "<group>";
@@ -260,6 +269,9 @@
 			files = (
 				41B290C929D316D000443394 /* ViewController.swift in Sources */,
 				41B290C529D316D000443394 /* AppDelegate.swift in Sources */,
+				4103A40A29D478990028EBA6 /* QuestionViewController.swift in Sources */,
+				417227E629DC54DA008FA4C3 /* Question.swift in Sources */,
+				4103A40C29D478C10028EBA6 /* ResultsViewController.swift in Sources */,
 				41B290C729D316D000443394 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
