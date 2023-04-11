@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaM-QX-ebc">
-                                <rect key="frame" x="20" y="44" width="49" height="48"/>
+                                <rect key="frame" x="20" y="44" width="54" height="48"/>
                                 <attributedString key="attributedText">
                                     <fragment content=" ">
                                         <attributes>
@@ -27,7 +27,7 @@
                                     </fragment>
                                     <fragment content="🐶">
                                         <attributes>
-                                            <font key="NSFont" size="40" name=".AppleColorEmojiUI"/>
+                                            <font key="NSFont" metaFont="system" size="40"/>
                                             <font key="NSOriginalFont" metaFont="system" size="40"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHY-ZJ-hlN">
-                                <rect key="frame" x="345" y="44" width="49" height="48"/>
+                                <rect key="frame" x="340" y="44" width="54" height="48"/>
                                 <attributedString key="attributedText">
                                     <fragment content=" ">
                                         <attributes>
@@ -46,7 +46,7 @@
                                     </fragment>
                                     <fragment content="🐬">
                                         <attributes>
-                                            <font key="NSFont" size="40" name=".AppleColorEmojiUI"/>
+                                            <font key="NSFont" metaFont="system" size="40"/>
                                             <font key="NSOriginalFont" metaFont="system" size="40"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -55,7 +55,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atD-VB-ApQ">
-                                <rect key="frame" x="20" y="814" width="49" height="48"/>
+                                <rect key="frame" x="20" y="814" width="54" height="48"/>
                                 <attributedString key="attributedText">
                                     <fragment content=" ">
                                         <attributes>
@@ -65,7 +65,7 @@
                                     </fragment>
                                     <fragment content="🐰">
                                         <attributes>
-                                            <font key="NSFont" size="40" name=".AppleColorEmojiUI"/>
+                                            <font key="NSFont" metaFont="system" size="40"/>
                                             <font key="NSOriginalFont" metaFont="system" size="40"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -74,7 +74,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3d-Ga-kox">
-                                <rect key="frame" x="345" y="814" width="49" height="48"/>
+                                <rect key="frame" x="340" y="814" width="54" height="48"/>
                                 <attributedString key="attributedText">
                                     <fragment content=" ">
                                         <attributes>
@@ -84,7 +84,7 @@
                                     </fragment>
                                     <fragment content="🐢">
                                         <attributes>
-                                            <font key="NSFont" size="40" name=".AppleColorEmojiUI"/>
+                                            <font key="NSFont" metaFont="system" size="40"/>
                                             <font key="NSOriginalFont" metaFont="system" size="40"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -146,6 +146,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6F-rc-LSM">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="qaC-1i-vFh" eventType="touchUpInside" id="l0i-9i-ega"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBa-ic-LA2">
                                         <rect key="frame" x="0.0" y="60" width="374" height="30"/>
@@ -224,17 +227,20 @@
                                         <rect key="frame" x="0.0" y="204" width="374" height="30"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="qaC-1i-vFh" eventType="touchUpInside" id="KIh-4v-x0c"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cgf-vp-6SQ">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cgf-vp-6SQ">
                                 <rect key="frame" x="20" y="298" width="374" height="153.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="sra-bB-NOV">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="123.5"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ASJ-3y-WwD">
-                                                <rect key="frame" x="102" y="0.0" width="170" height="31"/>
+                                                <rect key="frame" x="86" y="0.0" width="202" height="31"/>
                                             </slider>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="170" translatesAutoresizingMaskIntoConstraints="NO" id="kqx-8z-UFj">
                                                 <rect key="frame" x="60.5" y="103" width="253" height="20.5"/>
@@ -258,6 +264,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsT-sJ-33B">
                                         <rect key="frame" x="0.0" y="123.5" width="374" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="qaC-1i-vFh" eventType="touchUpInside" id="CWR-je-22n"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -291,19 +300,30 @@
                             <constraint firstItem="jGS-rQ-P2A" firstAttribute="centerY" secondItem="CRP-k4-Iju" secondAttribute="centerY" id="nRa-pu-n4d"/>
                             <constraint firstItem="pjb-i1-amV" firstAttribute="trailing" secondItem="Cgf-vp-6SQ" secondAttribute="trailing" constant="20" id="quS-KD-6oD"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="yYg-DZ-RQR"/>
-                                <exclude reference="Cgf-vp-6SQ"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="4qE-av-kvC"/>
                     <connections>
+                        <outlet property="mulLabel1" destination="fWx-9S-O5k" id="cIX-KY-SA0"/>
+                        <outlet property="mulLabel2" destination="eb2-oX-gtT" id="yUO-Q2-90a"/>
+                        <outlet property="mulLabel3" destination="518-9K-JWq" id="Eja-RE-U0F"/>
+                        <outlet property="mulLabel4" destination="XTr-o3-KYr" id="ZvM-gE-JqU"/>
+                        <outlet property="multiSwitch1" destination="I0g-fG-fL4" id="9Mh-MG-Ok1"/>
+                        <outlet property="multiSwitch2" destination="64D-07-xVd" id="gzr-kf-Dwv"/>
+                        <outlet property="multiSwitch3" destination="feL-81-gYB" id="YVY-1c-ae2"/>
+                        <outlet property="multiSwitch4" destination="xew-vy-KeW" id="Vy3-ra-84Y"/>
                         <outlet property="multipleStackView" destination="jGS-rQ-P2A" id="gBY-LE-ceK"/>
+                        <outlet property="questionLabel" destination="Ger-wy-FvC" id="I3k-kG-94b"/>
+                        <outlet property="questionProgressview" destination="CnD-nJ-CNx" id="CVy-Ol-295"/>
+                        <outlet property="rangedLabel1" destination="B32-uF-SL7" id="O4B-hV-pOx"/>
+                        <outlet property="rangedLabel2" destination="9gf-cN-GEr" id="Jfr-B4-FUa"/>
+                        <outlet property="rangedSlider" destination="ASJ-3y-WwD" id="KtF-3I-a2N"/>
                         <outlet property="rangedStackView" destination="Cgf-vp-6SQ" id="0a1-fV-NAz"/>
+                        <outlet property="singleButton1" destination="i6F-rc-LSM" id="Tfd-ce-q2h"/>
+                        <outlet property="singleButton2" destination="yBa-ic-LA2" id="eOH-Ou-Hfz"/>
+                        <outlet property="singleButton3" destination="IHw-rP-elt" id="gpS-hT-3L7"/>
+                        <outlet property="singleButton4" destination="ivu-iD-w10" id="acT-Ye-Cde"/>
                         <outlet property="singleStackView" destination="yYg-DZ-RQR" id="Z0G-5c-jCX"/>
-                        <segue destination="e4f-20-6jh" kind="show" id="hOI-Fe-YwK"/>
+                        <segue destination="e4f-20-6jh" kind="show" destinationCreationSelector="showResults:" id="hOI-Fe-YwK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSK-z6-KLD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -345,10 +365,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="yZg-n0-wG2">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="HnU-Z4-n8c"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="HnU-Z4-n8c">
+                            <connections>
+                                <action selector="unwindToQuizIntroduction:" destination="zQp-pT-4pU" id="md7-ew-kel"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="y4f-x6-9Gz" id="9NV-CG-xyL"/>
+                        <outlet property="resultDefinitionLabel" destination="vWz-b8-HS1" id="79e-YN-eVe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxy-aG-kmU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="zQp-pT-4pU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2747.826086956522" y="87.723214285714278"/>
         </scene>
